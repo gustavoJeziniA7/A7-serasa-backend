@@ -34,4 +34,5 @@ const filtrarL02 = (infoComercial: any) => {
 
 //               'L023405']
 
+
 export default filtrarL02;

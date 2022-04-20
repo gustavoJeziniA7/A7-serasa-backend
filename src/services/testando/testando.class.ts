@@ -6,6 +6,7 @@ import filtrarL02 from '../../Blocos/L02';
 
 const fetchTeste = async () => {
   const url = 'http://10.0.0.111:5000/layout/api/serasacnpjjson/bd/47209986000178'
+
   return await axios.get(url);
 }
 
@@ -21,6 +22,8 @@ export class Testando extends Service {
 
     // Separa pelo L(XX)
     const blocosSeparados = separaBlocos(blocos);
+    console.log(blocosSeparados);
+
     const {
       infoCadastral,
       infoComercial,
