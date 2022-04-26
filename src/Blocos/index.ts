@@ -1,3 +1,5 @@
+import tratarL02 from "./L02";
+
 const separaBlocos = (blocos:any) => {
   const infoCadastral = blocos.filter((bloco:any) => (Object.keys(bloco)[0]).includes('L01'));
   const infoComercial = blocos.filter((bloco:any) => (Object.keys(bloco)[0]).includes('L02'));
@@ -8,4 +10,18 @@ const separaBlocos = (blocos:any) => {
   return tudo;
 }
 
-export default separaBlocos;
+const tratarDados = (blocos: any) => {
+  const blocosSeparados = separaBlocos(blocos);
+  const {
+    infoCadastral,
+    infoComercial,
+    infoConsultas,
+    infoApontamentos
+  } = blocosSeparados;
+
+  const L02 = tratarL02(infoComercial)
+
+  return L02;
+}
+
+export default tratarDados;
