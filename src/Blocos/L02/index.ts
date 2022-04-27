@@ -1,4 +1,5 @@
 import tratarL0201 from "./L0201";
+import tratarL0211 from "./L0211";
 
 const tratarL02 = (infoComercial: any) => {
   // console.log(infoComercial);
@@ -10,11 +11,11 @@ const tratarL02 = (infoComercial: any) => {
   // console.log(L0211);
   // console.log(L0234);
 
-  const teste = tratarL0201(L0201);
-  // console.log(teste);
+  const tratadoL0201 = tratarL0201(L0201);
+  const tratadoL0211 = tratarL0211(L0211);
 
 
-  return teste
+  return {L0201: tratadoL0201, L0211: tratadoL0211};
 }
 
 

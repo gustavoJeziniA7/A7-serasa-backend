@@ -20,7 +20,14 @@ const tratarL0201 = (blocosL0201: any) => {
   const tratadoL020113 = tratarL020113(L020113)
   const tratadoL020114 = tratarL020114(L020114)
 
-  return {L020102: tratadoL020102,L020103: tratadoL020103, L020113: tratadoL020113, L020114: tratadoL020114 };
+  const tratadoL0201 = {
+    L020102: tratadoL020102,
+    L020103: tratadoL020103,
+    L020113: tratadoL020113,
+    L020114: tratadoL020114
+  }
+
+  return tratadoL0201;
 
 }
 
