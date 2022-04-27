@@ -19,7 +19,7 @@ const tratarL020103 = (bloco: any) => {
   //   }
   // ]
   const data = bloco[0]['L020103']
-  
+
   const tratadoL020103 = data.map((l: L020103) => {
     const {
       des_rel,
@@ -27,15 +27,17 @@ const tratarL020103 = (bloco: any) => {
       reservado_serasa
     } = l
 
-    return {
-      des_rel,
-      qtd_rel,
-      reservado_serasa
+    const FORNECEDORES = {
+      DESCRIÇÃO_DO_PERÍODO_RELACIONAMENTO: des_rel,
+      QUANTIDADE_DE_FONTES_RELACIONAMENTO: qtd_rel,
+      ÁREA_RESERVADA: reservado_serasa
     }
+
+    return FORNECEDORES
   })
 
   return tratadoL020103;
-  
+
 }
 
 export default tratarL020103;

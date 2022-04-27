@@ -1,5 +1,7 @@
 import tratarL020102 from "./L020102";
 import tratarL020103 from "./L020103";
+import tratarL020113 from "./L020113";
+import tratarL020114 from "./L020114";
 
 const tratarL0201 = (blocosL0201: any) => {
   // console.log(blocosL0201);
@@ -13,11 +15,13 @@ const tratarL0201 = (blocosL0201: any) => {
     L020114
   } = filtrados;
 
-  // tratarL020102(L020102)
+  const tratadoL020102 = tratarL020102(L020102)
   const tratadoL020103 = tratarL020103(L020103)
-  
-  return tratadoL020103;
-  
+  const tratadoL020113 = tratarL020113(L020113)
+  const tratadoL020114 = tratarL020114(L020114)
+
+  return {L020102: tratadoL020102,L020103: tratadoL020103, L020113: tratadoL020113, L020114: tratadoL020114 };
+
 }
 
 const filtrarL0201 = (blocosL0201: any) => {

@@ -11,10 +11,10 @@ const tratarL02 = (infoComercial: any) => {
   // console.log(L0234);
 
   const teste = tratarL0201(L0201);
-  console.log(teste);
-  
+  // console.log(teste);
 
-  return {L0201, L0211, L0234}
+
+  return teste
 }
 
 
