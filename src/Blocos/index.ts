@@ -1,5 +1,6 @@
 import tratarL02 from "./L02";
 import tratarL03 from "./L03";
+import tratarL04 from "./L04";
 
 const separaBlocos = (blocos:any) => {
   const infoCadastral = blocos.filter((bloco:any) => (Object.keys(bloco)[0]).includes('L01'));
@@ -22,8 +23,9 @@ const tratarDados = (blocos: any) => {
 
   const L02 = tratarL02(infoComercial)
   const L03 = tratarL03(infoConsultas)
+  const L04 = tratarL04(infoApontamentos)
 
-  return {L02, L03};
+  return {L02, L03, L04};
 }
 
 export default tratarDados;
